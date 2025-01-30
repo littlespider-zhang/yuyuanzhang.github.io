@@ -3,45 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的简历</title>
+    <title>Yuyuan's Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>张三</h1>
-        <p>前端开发工程师</p>
-        <p>邮箱: zhangsan@example.com | 电话: 123-456-7890</p>
-    </header>
-    <section>
-        <h2>职业目标</h2>
-        <p>寻找前端开发职位，专注于用户体验和性能优化。</p>
-    </section>
-    <section>
-        <h2>工作经验</h2>
-        <ul>
-            <li>
-                <h3>前端开发工程师 - ABC公司</h3>
-                <p>2020年1月 - 至今</p>
-                <p>负责公司官网的前端开发和维护。</p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>教育背景</h2>
-        <ul>
-            <li>
-                <h3>计算机科学学士 - XYZ大学</h3>
-                <p>2016年9月 - 2020年6月</p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>技能</h2>
-        <ul>
-            <li>HTML/CSS/JavaScript</li>
-            <li>React/Vue.js</li>
-            <li>Git/GitHub</li>
-        </ul>
-    </section>
+    <div class="resume">
+        <!-- 左侧栏 -->
+        <div class="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="个人照片" class="profile-img">
+                <h1 class="name">Yuyuan Zhang</h1>
+                <p class="title">Major in Biochemistry & Molecular Biology</p>
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>📧 yuyuanzhang22@ucas.ac.cn</li>
+                    <li>📞 +86 134-7619-8050</li>
+                    <li>🌐 https://github.com/littlespider-zhang</li>
+                    <li>📍 China</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Molecular cloning</li>
+                    <li>Protein purification</li>
+                    <li>Negative-stain EM</li>
+                    <li>cryo-EM(on the way)</li>
+                    <li>Programming with python</li>
+                </ul>
+            </div>
+            <div class="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Chinese (native)</li>
+                    <li>English (IELTS 7.5)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 右侧内容 -->
+        <div class="main-content">
+            <section class="about">
+                <h2>About</h2>
+                <p></p>
+            </section>
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>RA in Xinghua, Zhang's Lab, WHU, China</h3>
+                    <p class="date">2020</p>
+                    <ul>
+                        <li>Use magnetic tweezer(MT) to measure physical properties of dsDNA-PEG.</li>
+                        <li>Learned PCR & basic MT.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>TA of Biochemistry, WHU, China</h3>
+                    <p class="date">2020.09 - 2021.01</p>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>RA in Keqiong, Ye's Lab, IBP, China</h3>
+                    <p class="date">2021.10 - 2022.03</p>
+                    <ul>
+                        <li>Investigate assembly intermediates of H/ACA snoRNP in vitro</li>
+                        <li>Learned protein purification & yeast genetic manipulation.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <div class="school">
+                    <h3>Bachelor's degree - Wuhan University</h3>
+                    <p class="date">2018.08 - 2022.06</p>
+                    <ul>
+                        <li>Major in Biology</li>
+                    </ul>
+                </div>
+                <div class="school">
+                    <h3>Summer school - Harvard University</h3>
+                    <p class="date">2020.06 - 2022.08</p>
+                    <ul>
+                        <li>Courses: Calculus-I (A), Artificial Intelligence/Python (A minus)</li>
+                    </ul>
+                </div>
+                <div class="school">
+                    <h3>Pursuing Master's degreee - UCAS</h3>
+                    <p class="date">2022.08 - now</p>
+                    <ul>
+                        <li>Major: Biochemistry & Molecular biology</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
