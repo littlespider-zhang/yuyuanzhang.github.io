@@ -5,43 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的简历</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>张三</h1>
-        <p>前端开发工程师</p>
-        <p>邮箱: zhangsan@example.com | 电话: 123-456-7890</p>
-    </header>
-    <section>
-        <h2>职业目标</h2>
-        <p>寻找前端开发职位，专注于用户体验和性能优化。</p>
-    </section>
-    <section>
-        <h2>工作经验</h2>
-        <ul>
-            <li>
-                <h3>前端开发工程师 - ABC公司</h3>
-                <p>2020年1月 - 至今</p>
-                <p>负责公司官网的前端开发和维护。</p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>教育背景</h2>
-        <ul>
-            <li>
-                <h3>计算机科学学士 - XYZ大学</h3>
-                <p>2016年9月 - 2020年6月</p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>技能</h2>
-        <ul>
-            <li>HTML/CSS/JavaScript</li>
-            <li>React/Vue.js</li>
-            <li>Git/GitHub</li>
-        </ul>
-    </section>
+    <div class="resume">
+        <!-- 左侧栏 -->
+        <div class="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="个人照片" class="profile-img">
+                <h1 class="name">张三</h1>
+                <p class="title">前端开发工程师</p>
+            </div>
+            <div class="contact">
+                <h2>联系方式</h2>
+                <ul>
+                    <li>📧 zhangsan@example.com</li>
+                    <li>📞 123-456-7890</li>
+                    <li>🌐 github.com/zhangsan</li>
+                    <li>📍 北京, 中国</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h2>技能</h2>
+                <ul>
+                    <li>HTML/CSS/JavaScript</li>
+                    <li>React/Vue.js</li>
+                    <li>Git/GitHub</li>
+                    <li>UI/UX设计</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="languages">
+                <h2>语言</h2>
+                <ul>
+                    <li>中文 (母语)</li>
+                    <li>英语 (熟练)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 右侧内容 -->
+        <div class="main-content">
+            <section class="about">
+                <h2>关于我</h2>
+                <p>我是一个充满激情的前端开发工程师，专注于构建高效、用户友好的网页应用。拥有3年以上的开发经验，擅长使用现代前端技术如React和Vue.js。</p>
+            </section>
+            <section class="experience">
+                <h2>工作经验</h2>
+                <div class="job">
+                    <h3>前端开发工程师 - ABC公司</h3>
+                    <p class="date">2020年1月 - 至今</p>
+                    <ul>
+                        <li>负责公司官网的前端开发和维护。</li>
+                        <li>使用React重构旧版网站，提升性能。</li>
+                        <li>与设计团队合作，优化用户体验。</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>实习生 - XYZ科技</h3>
+                    <p class="date">2019年6月 - 2019年12月</p>
+                    <ul>
+                        <li>参与公司内部管理系统的开发。</li>
+                        <li>学习并应用Vue.js框架。</li>
+                        <li>协助团队完成项目文档编写。</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="education">
+                <h2>教育背景</h2>
+                <div class="school">
+                    <h3>计算机科学学士 - XYZ大学</h3>
+                    <p class="date">2016年9月 - 2020年6月</p>
+                    <ul>
+                        <li>主修课程：数据结构、算法、Web开发。</li>
+                        <li>获得优秀毕业生称号。</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="projects">
+                <h2>项目经验</h2>
+                <div class="project">
+                    <h3>在线商城</h3>
+                    <p class="date">2021年3月 - 2021年8月</p>
+                    <ul>
+                        <li>使用React和Node.js开发。</li>
+                        <li>实现用户注册、登录、购物车功能。</li>
+                        <li>优化页面加载速度，提升用户体验。</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>个人博客</h3>
+                    <p class="date">2020年9月 - 2020年12月</p>
+                    <ul>
+                        <li>使用Vue.js和Markdown构建。</li>
+                        <li>支持文章分类和标签功能。</li>
+                        <li>部署在GitHub Pages上。</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
